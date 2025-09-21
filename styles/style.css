@@ -116,7 +116,7 @@ address {
 }
 
 .letter-spacing-extended {
-  word-spacing: 7px;
+  word-spacing: 15px;
   align-content: center;
   text-transform: uppercase;
 }
