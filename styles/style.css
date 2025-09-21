@@ -116,13 +116,13 @@ address {
 }
 
 .letter-spacing-extended {
-  word-spacing: 11px;
+  word-spacing: 9px;
   align-content: center;
   text-transform: uppercase;
 }
 .lots {
   
-  padding-top: 140px;
+  padding-top: 170px;
   padding-right: 25px;
 }
 .lots__heading {
@@ -192,7 +192,7 @@ address {
   grid-template-columns: 334px 1fr;
   column-gap: 50px;
 
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 150px;
   padding-right: 25px;
 }
