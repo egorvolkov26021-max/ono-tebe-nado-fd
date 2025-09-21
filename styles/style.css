@@ -107,14 +107,17 @@ address {
 .bet-button {
   all: unset;
   background-color: transparent;
+  text-transform: uppercase;
   border: 1px solid;
   padding: 10px 25px 10px 25px;
   align-content: end;
+  font-size: 22px;
 }
 
 .letter-spacing-extended {
-  word-spacing: 20px;
+  word-spacing: 10px;
   align-content: center;
+  text-transform: uppercase;
 }
 .lots {
   margin-left: 0;
