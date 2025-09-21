@@ -91,7 +91,7 @@ address {
 .aligned-text_center {
   text-align: center;
   margin-top: 18px;
-  margin-right: 40px;
+  margin-right: px;
 }
 
 .aligned-text_right {
@@ -116,7 +116,7 @@ address {
 }
 
 .letter-spacing-extended {
-  word-spacing: 15px;
+  word-spacing: 12px;
   align-content: center;
   text-transform: uppercase;
 }
