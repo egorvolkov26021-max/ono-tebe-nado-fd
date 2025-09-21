@@ -43,71 +43,66 @@ address {
 .header__links-list-item_no-bullit {
   list-style: none;
 }
+
 .cover {
   position: relative;
   min-height: 757px;
-  padding: 50px;
-  display: flex;
+  color: hsl(0, 0%, 100%);
+  
   flex-direction: column;
-  justify-content: space-between;
-  color: #fff;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 0px;
 }
-
-.overlay.cover-fon {
+.overlay {
   position: absolute;
-  inset: 0;
-  background: url("../images/cover.jpg") center/cover no-repeat;
-  z-index: -2;
-}
-
-.overlay.cover-fon::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6); /* затемнение */
+  width: 100%;
+  height: 100%;
   z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-.cover__title {
-  font-family: "Raleway", sans-serif;
-  font-size: 100px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1;
+.cover-fon {
+  background-image: url(../images/cover.jpg);
+  filter: brightness(50%);
+}
+.cover_title {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  z-index: 1;
+  font-size: 100px;
+  font-weight: bolt;
+  text-transform: uppercase;
 }
 
-.aligned-text_left   { text-align: left; }
-.aligned-text_center { text-align: center; }
-.aligned-text_right  { text-align: right; }
+.aligned-text_left {
 
+  text-align: start;
+}
+.aligned-text_center {
+  text-align: center;
+}
+.aligned-text_right {
+  text-align: end;
+}
 .cover__description {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 22px;
 }
-
-.cover__description-text {
-  max-width: 600px;
-  word-spacing: 20px; /* увеличиваем расстояние между словами */
-}
-
 .bet-button {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 12px 30px;
-  font-size: 22px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.bet-button:hover {
-  background: rgba(255,255,255,0.1);
+  all: unset;
+  background-color: transparent;
+  border: 1px solid;
+  padding: 10px 25px 10px 25px;
+  align-content: end;
 }
 
+.letter-spacing-extended {
+  word-spacing: 20px;
+  align-content: center;
+}
 .lots {
   margin-left: 0;
   padding-top: 150px;
@@ -122,63 +117,57 @@ address {
 
 .lots__card-list {
   display: flex;
+  column-gap: 15px;
   justify-content: space-between;
-  gap: 25px;
-  padding: 0 25px;
-  list-style: none;
+  margin-right: 0;
+  padding-left: 25px;
 }
-
 .lots__card-list-item {
-  width: 334px;
-  min-height: 596px;
-}
-
-.card {
-  position: relative;
+  all: initial;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  color: #fff;
-  background-position: center;
-  background-size: cover;
-  text-decoration: none;
-}
 
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+  position: relative;
+  width: 334px;
+  min-height: 596px;
+  color: hsl(0, 0%, 100%);
 }
-.card_type_book {
-  background-image: url("../images/card-lot-02.jpg");
+.card__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: underline;
 }
-.card_type_picture {
-  background-image: url("../images/card-lot-03.jpg");
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  align-content: end;
 }
-
-
-.card .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
-}
-
-
 .card__title,
 .card__text {
-  position: relative;
-  z-index: 1;
-  margin: 40px;
+  height: 100%;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
-
-.card__title {
-  font-size: 22px;
-  text-transform: uppercase;
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  filter: brightness(50%);
 }
-
-.card__text {
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  filter: brightness(50%);
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  filter: brightness(50%);
+}
+.lots__look-more-link {
+  text-decoration: underline;
   font-size: 20px;
   font-weight: 400;
-  
+  padding-left: 40px;
+  padding-bottom: 0px;
 }
 .about {
   display: grid;
