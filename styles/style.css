@@ -64,14 +64,14 @@ address {
 }
 .cover-fon {
   background-image: url(../images/cover.jpg);
+   filter: brightness(50%);
   
 }
 .cover_title {
   display: flex;
   flex-direction: column;
- 
- 
   z-index: 1;
+  
   
 }
 .aligned-text {
@@ -79,8 +79,12 @@ address {
   font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
-  gap: 25px;
+  column-gap: 25px;
+  row-gap: 25;
   letter-spacing: 30px;
+}
+.no_space{
+  letter-spacing: normal;
 }
 .aligned-text_left {
   text-align: left;
