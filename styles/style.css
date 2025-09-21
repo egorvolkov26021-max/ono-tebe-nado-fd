@@ -116,14 +116,14 @@ address {
 }
 
 .letter-spacing-extended {
-  word-spacing: 10px;
+  word-spacing: 11px;
   align-content: center;
   text-transform: uppercase;
 }
 .lots {
   margin-left: 0;
-  padding-top: 150px;
-  padding-right: 25px;
+  padding-top: 100px;
+
 }
 .lots__heading {
   padding-left: 40px;
