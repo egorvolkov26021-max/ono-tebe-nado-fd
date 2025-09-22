@@ -165,23 +165,27 @@ address {
 }
 .card__title,
 .card__text {
+  line-height: 120%;
   height: 100%;
   margin-left: 40px;
-  margin-top: 10px;
+  margin-top: 48px;
   margin-right: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.card__text{
+  width: 254;
 }
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 .lots__look-more-link {
   text-decoration: underline;
