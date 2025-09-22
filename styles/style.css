@@ -116,7 +116,7 @@ address {
 }
 
 .letter-spacing-extended {
-  word-spacing: 1px;
+  word-spacing: 3px;
   align-content: center;
   text-transform: uppercase;
 }
@@ -171,21 +171,22 @@ address {
   margin-top: 48px;
   margin-right: 40px;
   margin-bottom: 40px;
+  font-family: Raleway;
 }
 .card__text{
   width: 254;
 }
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 .lots__look-more-link {
   text-decoration: underline;
