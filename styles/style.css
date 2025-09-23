@@ -29,10 +29,10 @@ address {
 }
 
 .header__link {
-  text-decoration-line: underline;
-  text-underline-offset: 4px;
+   
+  text-decoration: none;
+  
 }
-
 address {
   display: flex;
   flex-direction: column;
