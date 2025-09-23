@@ -30,7 +30,7 @@ address {
 
 .header__link {
   text-decoration-line: none;
-  text-underline-offset: 4px; /* Объединил с дублирующимся селектором ниже */
+  text-underline-offset: 4px;
 }
 
 address {
@@ -41,7 +41,6 @@ address {
   justify-self: end;
   max-width: 240px;
   font-style: normal;
-  /* Убрал дублирующиеся font-size: 18px; и font-family: Raleway; */
 }
 
 .header__logo {
@@ -53,12 +52,12 @@ address {
 }
 
 .header__links-list-item {
-  font-family: Raleway; /* Оставил, так как может быть специфичность */
+  font-family: Raleway;
   font-size: 18px;
   list-style: circle;
 }
 
-/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР:
+/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР (строка 82):
 .header__link {
   text-decoration-line: underline;
   text-underline-offset: 4px;
@@ -318,21 +317,23 @@ footer {
 .footer__menu-link {
   text-decoration: underline;
   text-underline-offset: 4px;
-  padding-right: 0; /* Исправил пустое значение */
+  padding-right: 0;
 }
 
 .footer__menu-link_active {
   text-decoration: none;
 }
 
+/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР (строка 338):
+.footer__menu-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+*/
+
 .footer__social-list-item {
   display: flex;
   column-gap: 47px;
-}
-
-.footer__social-icon {
-  width: 48px;
-  height: 48px;
 }
 
 .footer__social-icon {
