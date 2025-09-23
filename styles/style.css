@@ -3,20 +3,6 @@ body {
   margin-right: 0;
 }
 
-/* Общие стили для текста - убрал дублирование */
-.text-list, address, .header__links-list-item, .card__title, .card__text {
-  font-family: Raleway;
-}
-
-.text-list, address, .header__links-list-item {
-  font-size: 18px;
-}
-
-/* Общие стили для подчеркивания - убрал дублирование */
-.header__link, address a, .lots__look-more-link, .footer__menu-link {
-  text-underline-offset: 4px;
-}
-
 header {
   height: 293px;
   display: grid;
@@ -29,7 +15,10 @@ address a {
   all: unset;
 }
 
-.text-list, address {
+.text-list,
+address {
+  font-size: 18px;
+  font-family: Raleway;
   border: 400;
 }
 
@@ -41,6 +30,7 @@ address a {
 
 .header__link {
   text-decoration-line: none;
+  text-underline-offset: 4px; /* Объединил с дублирующимся селектором ниже */
 }
 
 address {
@@ -51,7 +41,7 @@ address {
   justify-self: end;
   max-width: 240px;
   font-style: normal;
-  /* Убрал дублирующиеся font-size и font-family */
+  /* Убрал дублирующиеся font-size: 18px; и font-family: Raleway; */
 }
 
 .header__logo {
@@ -63,14 +53,17 @@ address {
 }
 
 .header__links-list-item {
-  /* Убрал дублирующиеся font-family и font-size */
+  font-family: Raleway; /* Оставил, так как может быть специфичность */
+  font-size: 18px;
   list-style: circle;
 }
 
+/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР:
 .header__link {
   text-decoration-line: underline;
-  /* text-underline-offset: 4px; - перенесено в общий селектор */
+  text-underline-offset: 4px;
 }
+*/
 
 .header__links-list-item_no-bullit {
   list-style: none;
@@ -88,7 +81,7 @@ address span {
 
 address a {
   text-decoration: underline;
-  /* text-underline-offset: 4px; - перенесено в общий селектор */
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -222,13 +215,14 @@ address a {
   padding-bottom: 5px;
 }
 
-.card__title, .card__text {
+.card__title,
+.card__text {
   line-height: 120%;
   height: 100%;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 40px;
-  /* font-family: Raleway; - перенесено в общий селектор */
+  font-family: Raleway;
 }
 
 .card__title {
@@ -253,7 +247,7 @@ address a {
 
 .lots__look-more-link {
   text-decoration: underline;
-  /* text-underline-offset: 4px; - перенесено в общий селектор */
+  text-underline-offset: 4px;
   font-size: 20px;
   font-weight: 400;
   padding-left: 65px;
@@ -323,8 +317,8 @@ footer {
 
 .footer__menu-link {
   text-decoration: underline;
-  /* text-underline-offset: 4px; - перенесено в общий селектор */
-  padding-right: 0; /* исправил пустое значение */
+  text-underline-offset: 4px;
+  padding-right: 0; /* Исправил пустое значение */
 }
 
 .footer__menu-link_active {
@@ -334,6 +328,11 @@ footer {
 .footer__social-list-item {
   display: flex;
   column-gap: 47px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
 
 .footer__social-icon {
