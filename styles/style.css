@@ -57,7 +57,7 @@ address {
   list-style: circle;
 }
 
-/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР (строка 82):
+/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР (строка 81):
 .header__link {
   text-decoration-line: underline;
   text-underline-offset: 4px;
@@ -324,13 +324,6 @@ footer {
   text-decoration: none;
 }
 
-/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР (строка 338):
-.footer__menu-link {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-*/
-
 .footer__social-list-item {
   display: flex;
   column-gap: 47px;
@@ -340,3 +333,9 @@ footer {
   width: 48px;
   height: 48px;
 }
+
+/* УДАЛЕНО ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР (строка 227):
+.footer__menu-link {
+  padding-right: px;
+}
+*/
