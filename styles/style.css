@@ -63,7 +63,7 @@ address {
   row-gap: 7px;
   
 }
-.header__address{
+.header__address {
   padding-right:37px;
 }
 
@@ -204,12 +204,11 @@ address {
   height: 100%;
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 50px;
   font-family: Raleway;
 }
 
-.card__title {
-  margin-top: 50px;
-}
+
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
