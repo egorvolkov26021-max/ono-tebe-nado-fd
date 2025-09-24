@@ -1,5 +1,7 @@
 body {
-  margin: 0 auto;
+  width: 1100px;
+  margin: 0 auto; 
+  font-family: Raleway, sans-serif;
 }
 header {
   min-height: 293px;
@@ -12,14 +14,14 @@ header {
 .text-list,
 address {
   font-size: 18px;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 .header__links-list {
   display: flex;
   column-gap: 32.8px;
   text-transform: lowercase;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   list-style: circle;
 }
