@@ -3,6 +3,7 @@ body {
   margin: auto;
   font-family: Raleway, sans-serif;
 }
+
 header {
   min-height: 293px;
   display: grid;
@@ -54,6 +55,7 @@ address {
   text-underline-offset: 4px;
   row-gap: 7px;
 }
+
 .header__address {
   padding-right: 37px;
 }
@@ -102,10 +104,6 @@ address {
   column-gap: 25px;
   row-gap: 25;
   letter-spacing: 30px;
-}
-
-.no_space {
-  letter-spacing: normal;
 }
 
 .aligned-text_left {
